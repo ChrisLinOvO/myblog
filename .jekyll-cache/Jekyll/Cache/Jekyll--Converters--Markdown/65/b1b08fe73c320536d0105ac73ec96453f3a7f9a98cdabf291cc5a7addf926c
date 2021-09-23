@@ -1,0 +1,62 @@
+I"�<h2>macOS使用Homebrew安裝環境  Ruby &amp; Jekyll安裝</h2>
+
+<h1 id="1macos-使用homebrew安裝環境--參考連結">1.macOS 使用Homebrew安裝環境  <em><a href="https://jekyllrb.com/docs/installation/macos/" target="_blank">參考連結</a></em></h1>
+<ul>
+  <li>安裝 Homebrew
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">#</span> <span class="nx">Install</span> <span class="nx">Homebrew</span>
+<span class="o">/</span><span class="nx">bin</span><span class="o">/</span><span class="nx">bash</span> <span class="o">-</span><span class="nx">c</span> <span class="dl">"</span><span class="s2">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)</span><span class="dl">"</span>
+</code></pre></div>    </div>
+  </li>
+  <li>安裝 Ruby
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">#</span> <span class="nx">Install</span> <span class="nx">Ruby</span>
+<span class="nx">brew</span> <span class="nx">install</span> <span class="nx">ruby</span>
+</code></pre></div>    </div>
+  </li>
+  <li>將 brew ruby​​ 和 gems 路徑添加到您的 shell 配置中
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">#</span> <span class="nx">If</span> <span class="nx">you</span><span class="dl">'</span><span class="s1">re using Zsh
+echo </span><span class="dl">'</span><span class="k">export</span> <span class="nx">PATH</span><span class="o">=</span><span class="dl">"</span><span class="s2">/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH</span><span class="dl">"'</span><span class="s1"> &gt;&gt; ~/.zshrc
+# If you</span><span class="dl">'</span><span class="nx">re</span> <span class="nx">using</span> <span class="nx">Bash</span>
+<span class="nx">echo</span> <span class="dl">'</span><span class="s1">export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"</span><span class="dl">'</span> <span class="o">&gt;&gt;</span> <span class="o">~</span><span class="sr">/.bash_profil</span><span class="err">e
+#</span> <span class="nx">Unsure</span> <span class="nx">which</span> <span class="nx">shell</span> <span class="nx">you</span> <span class="nx">are</span> <span class="nx">using</span><span class="p">?</span> <span class="nx">Type</span>
+<span class="nx">echo</span> <span class="nx">$SHELL</span>
+</code></pre></div>    </div>
+  </li>
+  <li>重新啟動您的終端並檢查您的 Ruby 設置
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">which</span> <span class="nx">ruby</span>
+<span class="err">#</span> <span class="o">/</span><span class="nx">usr</span><span class="o">/</span><span class="nx">local</span><span class="o">/</span><span class="nx">opt</span><span class="o">/</span><span class="nx">ruby</span><span class="o">/</span><span class="nx">bin</span><span class="o">/</span><span class="nx">ruby</span>
+<span class="nx">ruby</span> <span class="o">-</span><span class="nx">v</span>
+<span class="nx">ruby</span> <span class="mf">3.0</span><span class="p">.</span><span class="mi">0</span><span class="nx">p0</span> <span class="p">(</span><span class="mi">2020</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">25</span> <span class="nx">revision</span> <span class="mi">95</span><span class="nx">aff21468</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h1 id="2安裝-bundler-和-jekyll-gems">2.安裝 bundler 和 jekyll gems</h1>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">gem</span> <span class="nx">install</span> <span class="o">--</span><span class="nx">user</span><span class="o">-</span><span class="nx">install</span> <span class="nx">bundler</span> <span class="nx">jekyll</span>
+</code></pre></div></div>
+
+<h1 id="3創立jekyll專案並cd帶該目錄中">3.創立Jekyll專案並cd帶該目錄中</h1>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">jekyll</span> <span class="k">new</span> <span class="nx">myblog</span>
+<span class="nx">cd</span> <span class="nx">myblog</span>
+</code></pre></div></div>
+
+<h1 id="4執行專案">4.執行專案</h1>
+<ul>
+  <li>第一次用
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">bundle</span> <span class="nx">exec</span> <span class="nx">jekyll</span> <span class="nx">serve</span> 
+</code></pre></div>    </div>
+  </li>
+  <li>若Jekyll 服務在 Ruby 3.0 上失敗 缺少 webrick <em><a href="https://github.com/github/pages-gem/issues/752" target="_blank">參考連結</a></em>
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">bundle</span> <span class="nx">add</span> <span class="nx">webrick</span>  
+</code></pre></div>    </div>
+  </li>
+  <li>之後都用
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">jekyll</span> <span class="nx">serve</span>
+</code></pre></div>    </div>
+  </li>
+  <li>本地端開啟
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">瀏覽到http</span><span class="p">:</span><span class="c1">//localhost:4000</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+:ET

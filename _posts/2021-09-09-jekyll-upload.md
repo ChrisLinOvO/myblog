@@ -1,9 +1,9 @@
 ---
-title: Jekyll(4)-Github+SEO
+title: Jekyll-Step4.上傳Github+SEO
 author: ChrisLin
 layout: post
 ---
-<h2>在Github使用Jekyll&SEO(4) 上傳到Github+設定SEO</h2>
+<h2>上傳到Github+設定SEO教學</h2>
 
 
 # 1.設定好_config.yml中網域

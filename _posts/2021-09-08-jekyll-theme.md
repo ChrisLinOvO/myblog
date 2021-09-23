@@ -1,10 +1,10 @@
 ---
-title: Jekyll(3)-套用主題
+title: Jekyll-Step3.套用主題
 author: ChrisLin
 layout: post
 plink: "/2021/09/07/jekyll-basic"
 ---
-<h2>在Github使用Jekyll&SEO(3)  Jekyll套用主題</h2>
+<h2>Jekyll套用主題介紹</h2>
 
 # 1.*[theme主題](https://jekyllthemes.io/free){:target="_blank"}*
 * 有很多好用漂亮的主題，用Github clone下來或是下載zip檔案

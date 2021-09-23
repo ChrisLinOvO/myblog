@@ -1,9 +1,9 @@
 ---
-title: Jekyll(2)-基本架構
+title: Jekyll-Step2.基本架構
 author: ChrisLin
 layout: post
 ---
-<h2>在Github使用Jekyll&SEO(2)  Jekyll基本架構</h2>
+<h2>Jekyll基本架構介紹</h2>
 
 # 1._includes資料夾
 * 是存放重複使用元素(Dom/html)的地方，通常是header/footer之類的

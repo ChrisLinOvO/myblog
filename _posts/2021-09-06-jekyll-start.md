@@ -1,9 +1,9 @@
 ---
-title: Jekyll(1)-環境安裝
+title: Jekyll-Step1.安裝環境
 author: ChrisLin
 layout: post
 ---
-<h2>在Github使用Jekyll&SEO(1)  Ruby & Jekyll安裝</h2>
+<h2>macOS使用Homebrew安裝Ruby & Jekyll</h2>
 
 # 1.macOS 使用Homebrew安裝環境  *[參考連結](https://jekyllrb.com/docs/installation/macos/){:target="_blank"}* 
 * 安裝 Homebrew
