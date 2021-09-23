@@ -56,4 +56,5 @@ EX:
 <meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXX" />
 ```
 * SEO設置完成會有一段時間等Google重新刷新才能搜尋到
-* *[Sitemaps](https://www.xml-sitemaps.com/){:target="_blank"}* 將自己Blog Url 貼上
+* *[Sitemaps](https://www.xml-sitemaps.com/){:target="_blank"}* 將自己Blog Url(https://chrislinovo.github.io/myblog/) 貼上
+* 下載sitemap.xml 並將檔案放置在目錄裡 重新推到gh-pages即可
