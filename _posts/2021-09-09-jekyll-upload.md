@@ -56,3 +56,4 @@ EX:
 <meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXX" />
 ```
 * SEO設置完成會有一段時間等Google重新刷新才能搜尋到
+* *[Sitemaps](https://www.xml-sitemaps.com/){:target="_blank"}* 將自己Blog Url 貼上
