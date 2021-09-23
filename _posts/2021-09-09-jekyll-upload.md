@@ -1,5 +1,5 @@
 ---
-title: Jekyll-Step4.上傳Github+SEO
+title: Jekyll-Step4.Github+SEO
 author: ChrisLin
 layout: post
 ---
