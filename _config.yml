@@ -55,6 +55,8 @@ stackoverflow_url:
 pinterest_url:
 slack_url:
 dribbble_url:
+sitemap:
+path: sitemap.xml
 
 # Google Analytics Tracking ID goes here:
 google_analytics:
